@@ -1,18 +1,21 @@
 import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import "./News.css";
-export const News = () => {
+export const News = ({ onValidated }) => {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  if (email && email.indexOf("@") > -1) {
+    if (onValidated) {
+      onValidated({
+        EMAIL: email
+      });
+    }
     setEmail('');
-    email &&
- email.indexOf("@") > -1 &&
- onValidated({
- EMAIL: email 
- })
-  };
+  }
+};
 
   return (
     <Col lg={12}>
