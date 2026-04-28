@@ -2,7 +2,7 @@
   "name": "port-website",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://youssef-ahmed29.github.io/port-website",
+  "homepage": "https://youssef-ahmed29.github.io/web-project",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -14,6 +14,7 @@
     "react-bootstrap-icons": "^1.11.6",
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.6",
+    "react-on-screen": "^2.1.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -22,8 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
