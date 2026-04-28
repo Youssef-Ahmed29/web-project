@@ -6,7 +6,12 @@ export const News = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEmail(''); 
+    setEmail('');
+    email &&
+ email.indexOf("@") > -1 &&
+ onValidated({
+ EMAIL: email 
+ })
   };
 
   return (
