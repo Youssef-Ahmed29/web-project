@@ -64,3 +64,35 @@
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
+@media (max-width: 768px) {
+
+  .newsletter-bx {
+    padding: 30px 20px;   
+    margin-top: 0;        
+    margin-bottom: 40px;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  .newsletter-bx h3 {
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+
+  .new-email-bx {
+    flex-direction: column;   
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .new-email-bx input {
+    padding: 12px;
+    text-align: center;
+  }
+
+  .new-email-bx button {
+    width: 100%;              
+    padding: 12px;
+    border-radius: 12px;
+  }
+}
